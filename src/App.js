@@ -12,7 +12,6 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    console.log("In componentDidMount");
     window.navigator.geolocation.getCurrentPosition(
       (position) => {
         this.setState({

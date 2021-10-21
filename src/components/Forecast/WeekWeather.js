@@ -37,12 +37,10 @@ class WeekWeather extends React.Component {
     this.setState({
       weeksWeather,
     });
-    console.log(responseData);
   };
 
   renderRows = () => {
     const { weeksWeather } = this.state;
-    console.log(weeksWeather);
     return weeksWeather.map((dayForecast) => {
       return (
         <tr>
