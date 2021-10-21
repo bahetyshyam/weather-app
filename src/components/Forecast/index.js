@@ -6,7 +6,7 @@ class Forecast extends React.Component {
   render() {
     const { location } = this.props;
     return (
-      <div className="ui grid">
+      <div className="ui stackable grid">
         <TodaysWeather location={location} />
         <WeekWeather location={location} />
       </div>
